@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="anchorPane" onKeyPressed="#keyPressHandler" onKeyReleased="#keyReleaseHandler" onMouseClicked="#mouseClickHandler" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="jccf9celementalist.InstructionsController">
+   <children>
+      <Button fx:id="returnToMenuButton" mnemonicParsing="false" onAction="#returnToMenuButtonHandler" prefHeight="34.0" prefWidth="113.0" text="Return to Menu" />
+      <Label fx:id="titleLabel" alignment="CENTER" layoutX="113.0" prefHeight="69.0" prefWidth="404.0" text="You are a Wizard">
+         <font>
+            <Font name="Chiller" size="39.0" />
+         </font>
+      </Label>
+      <Label fx:id="topLabel" layoutX="3.0" layoutY="89.0" prefHeight="69.0" prefWidth="465.0" text="Use W,A,S,D to move">
+         <font>
+            <Font name="Chiller" size="39.0" />
+         </font>
+      </Label>
+      <Label fx:id="bottomLabel" layoutX="10.0" layoutY="480.0" prefHeight="69.0" prefWidth="540.0" text="Progress to the yellow zone">
+         <font>
+            <Font name="Chiller" size="39.0" />
+         </font>
+      </Label>
+      <Rectangle fx:id="yellowZone" arcHeight="5.0" arcWidth="5.0" fill="#e5ff00" height="75.0" layoutX="515.0" layoutY="280.0" stroke="BLACK" strokeType="INSIDE" width="80.0" />
+   </children>
+</AnchorPane>

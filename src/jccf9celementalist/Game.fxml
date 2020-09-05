@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="anchorPane" onKeyPressed="#keyPressHandler" onKeyReleased="#keyReleaseHandler" onMouseClicked="#mouseClickHandler" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: darkgrey;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="jccf9celementalist.GameController">
+   <children>
+      <StackPane fx:id="escMenu" layoutX="300.0" layoutY="225.0" prefHeight="300.0" prefWidth="200.0" style="-fx-background-color: lightgray;" visible="false">
+         <children>
+            <Label fx:id="waveCounter" alignment="CENTER" prefHeight="30.0" prefWidth="150.0" text="Wave: 0" translateY="-120.0">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Button fx:id="returnToMenu1" layoutX="35.0" layoutY="90.0" mnemonicParsing="false" onAction="#resumeTimer" prefHeight="40.0" prefWidth="150.0" text="Resume" translateY="-80.0" wrapText="true">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#handleOpen" prefHeight="40.0" prefWidth="150.0" text="Load Game" translateY="20.0" wrapText="true">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button layoutX="35.0" layoutY="90.0" mnemonicParsing="false" onAction="#returnToMenuButtonHandler" prefHeight="40.0" prefWidth="150.0" text="Return to Menu" translateY="70.0" wrapText="true">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button layoutX="35.0" layoutY="140.0" mnemonicParsing="false" onAction="#handleSave" prefHeight="40.0" prefWidth="150.0" text="Save Game" translateY="-30.0" wrapText="true">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+         </children>
+      </StackPane>
+      <StackPane fx:id="gameOver" layoutX="310.0" layoutY="235.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lightgray;" visible="false">
+         <children>
+            <Label fx:id="waveCounterGameOver" alignment="CENTER" prefHeight="30.0" prefWidth="84.0" text="Wave: 0" translateY="-80.0">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Button fx:id="returnToMenu1" mnemonicParsing="false" onAction="#returnToMenuButtonHandler" prefHeight="40.0" prefWidth="150.0" text="Return to Menu" translateY="15.0" wrapText="true">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Label fx:id="killCount" alignment="CENTER" layoutX="68.0" layoutY="95.0" prefHeight="30.0" prefWidth="185.0" text="Enemies Slain:" translateY="-40.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </StackPane>
+   </children>
+</AnchorPane>

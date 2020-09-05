@@ -1,0 +1,34 @@
+1. Object oriented elements that you write the code for:
+	A Classes
+		Fireball, IceWall, Player, Crawler
+	B Subclasses
+		All of the above classes extend either Circle or Rectangle
+		GameController, InstructionsController, MainMenuController extend Switchable
+		GameModel, InstructionsModel extend FirePropertyChange
+	C At least one abstract class
+		Switchable
+		FirePropertyChange
+	D At least one Interface
+		GameObject
+2. Code elements that you utilize:
+	A One or more collection classes
+		GameModel class (Line 29-31)
+	B Exception Handling
+		GameController (Line 204 - 228)
+3. Application must have clearly defined model
+	GameModel - GameController
+	InstructionsModel - InstructionsController
+	MainMenuModel - MainMenuController
+4. There are 3 scenes who's contents change based on what the application is on
+	Game , MainMenu, Instructions. Game and Instructions content's update based on application state
+	GameController - propertyChange(PropertyChangeEvent evt) (Lines 134 - 184)
+	InstructionsController - propertyChange(PropertyChangeEvent evt) (Lines 97 - 136)
+5. There is an "About" section
+	Found in MainMenu scene
+	MainMenuController - aboutButtonHandler() (Lines 57 - 75)
+6. Application must save/load data
+	Handled in Game scene. Press ESC to save/load data. SampleData to load is in zip file
+	GameController - handleSave() (Lines 203 - 227)
+	GameController - handleOpen() (Lines 230 - 258)
+	Current score and level is saved/loaded
+	Save opens file explorer to save wherever desired

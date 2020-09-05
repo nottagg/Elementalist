@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="anchorPane" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="jccf9celementalist.MainMenuController">
+    <children>
+        <Label fx:id="label" layoutX="278.0" layoutY="14.0" minHeight="16" minWidth="69" text="Elementalist">
+         <font>
+            <Font name="Bradley Hand ITC" size="46.0" />
+         </font></Label>
+      <Label fx:id="label1" layoutX="302.0" layoutY="80.0" minHeight="16" minWidth="69" text="Main Menu">
+         <font>
+            <Font name="Bradley Hand ITC" size="40.0" />
+         </font>
+      </Label>
+      <Button fx:id="startButton" layoutX="350.0" layoutY="160.0" mnemonicParsing="false" onAction="#newGameButtonHandler" prefHeight="50.0" prefWidth="100.0" text="New Game" />
+      <Button fx:id="instructionsButton" layoutX="350.0" layoutY="240.0" mnemonicParsing="false" onAction="#instructionsButtonHandler" prefHeight="50.0" prefWidth="100.0" text="Instructions" />
+      <Button layoutX="350.0" layoutY="320.0" mnemonicParsing="false" onAction="#aboutButtonHandler" prefHeight="50.0" prefWidth="100.0" text="About" />
+      <Label layoutX="197.0" layoutY="160.0" prefHeight="134.0" prefWidth="143.0" text="In-game, press ESC to open the menu. Here you can save, load, quit, and see what wave you are on" wrapText="true" />
+      <Button fx:id="quitButton1" layoutX="350.0" layoutY="400.0" mnemonicParsing="false" onAction="#quitButtonHandler" prefHeight="50.0" prefWidth="100.0" text="Quit" />
+      <Circle fill="DODGERBLUE" layoutX="87.0" layoutY="557.0" radius="16.0" stroke="BLACK" strokeType="INSIDE" />
+      <Label layoutX="16.0" layoutY="466.0" prefHeight="66.0" prefWidth="143.0" text="This is you. You are a wizard skilled in fire and ice." textAlignment="CENTER" wrapText="true" />
+      <Label layoutX="294.0" layoutY="457.0" prefHeight="84.0" prefWidth="191.0" text="These are your enemies. They crawl towards you. Use fireballs to kill them, and ice walls to stop them." textAlignment="CENTER" wrapText="true" />
+      <Circle fill="GREENYELLOW" layoutX="356.0" layoutY="557.0" radius="12.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fill="GREENYELLOW" layoutX="389.0" layoutY="557.0" radius="12.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fill="GREENYELLOW" layoutX="421.0" layoutY="557.0" radius="12.0" stroke="BLACK" strokeType="INSIDE" />
+    </children>
+</AnchorPane>
